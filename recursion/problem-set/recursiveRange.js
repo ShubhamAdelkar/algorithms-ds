@@ -3,6 +3,7 @@ Write a function called recursiveRange which accepts a number and adds up all th
 */
 
 function recursiveRange(number) {
+    if(number < 0) return 0;
   if (number === 1) return 1;
   return number + recursiveRange(number - 1);
 }
