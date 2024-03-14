@@ -73,30 +73,20 @@ console.log(binarySearch(states, value));
 console.log(binarySearch(["Hello", "hii", "meaow", "median"], "hii"));
 console.log(binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 0], 9));
 
-// my solution, by my own.
-function binarySearch(array, value) {
-  if (array.length === 0) return null;
-  let left = 0;
-  let right = array.length - 1;
+// More optimize solution.
+function search(nums, target) {
+  let st = 0;
+  let end = nums.length - 1;
 
-  for (let i = 0; i < array.length; i++) {
-    let median = Math.floor(left + right / 2);
-    if (median > value) {
-      right = median;
-      if (array[i] === value) {
-        return array.indexOf(value);
-      }
-    } else {
-      left = right - 1;
-      if (array[i] === value) {
-        return array.indexOf(value);
-      }
-    }
+  while (st <= end) {
+    const mid = ~~((end - st) / 2) + st;
+    const num = nums[mid];
+
+    if (num === target) return mid;
+    num > target ? (end = mid - 1) : (st = mid + 1);
   }
 
-  return -1; // Return -1 if the value is not found
+  return -1;
 }
 
-console.log("Me " + binarySearch(states, value));
-console.log("Me " + binarySearch(["Hello", "hii", "meaow", "median"], "hii"));
-console.log("Me " + binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 0], 9));
+console.log("Optimized " + search(states, value));
