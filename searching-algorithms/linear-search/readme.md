@@ -1,4 +1,4 @@
-# Linear Search
+# Linear Search Algorithm
 
 Linear search, also known as sequential search, is a simple searching algorithm that sequentially checks each element of a collection (such as an array or a list) until the target element is found or the entire collection is traversed. It is one of the most straightforward searching algorithms and is suitable for small collections or when the elements are not sorted.
 
