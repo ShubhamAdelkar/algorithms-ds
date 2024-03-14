@@ -3,12 +3,8 @@ Write a recursive function called fib which accepts a number and returns the nth
 */
 
 function fib(number) {
-  if (number === 0) {
-    return 0;
-  }
-  if (number === 1 || number === 2) {
-    return 1;
-  }
+  if (number <= 0) return 0;
+  if (number <= 2) return 1;
   return fib(number - 1) + fib(number - 2);
 }
 
@@ -16,4 +12,3 @@ console.log(fib(4)); // Output: 3
 console.log(fib(10)); // Output: 55
 console.log(fib(28)); // Output: 317811
 console.log(fib(35)); // Output: 9227465
-
