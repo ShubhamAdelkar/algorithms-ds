@@ -9,7 +9,7 @@ Recursion is a fundamental concept in computer science and programming. The `rec
 ### 2. Searching Algorithms
 
 Searching algorithms are methods used to find a particular item (or items) with specified properties within a collection of data. These algorithms are fundamental in computer science and are widely used in various applications, including databases, information retrieval systems, and more.
-Searching algorithms directory includes this - 1.`Linear Search` 2. `Binary Search` algorithms.
+Searching algorithms directory includes this - `Linear Search` `Binary Search` algorithms.
 
 `Working on...`
 
