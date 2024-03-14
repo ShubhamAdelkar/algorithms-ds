@@ -76,25 +76,24 @@ console.log(binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 0], 9));
 // my solution, by my own
 function binarySearch(array, value) {
   if (array.length === 0) return null;
-  let left = array[0];
-  let right = array[array.length - 1];
+  let left = 0;
+  let right = array.length - 1;
 
   for (let i = 0; i < array.length; i++) {
-    let median = Math.floor(array.length / 2);
+    let median = Math.floor(left + right / 2);
     if (median > value) {
       right = median;
-      median = Math.floor(left + right / 2);
       if (array[i] === value) {
         return array.indexOf(value);
       }
     } else {
       left = right - 1;
-      median = Math.floor(left + right / 2);
       if (array[i] === value) {
         return array.indexOf(value);
       }
     }
   }
+
   return -1;
 }
 
