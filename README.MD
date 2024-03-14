@@ -4,7 +4,9 @@ This repository aims to provideimplementations of various algorithms and data st
 
 ### 1. Recursion
 
-Recursion is a fundamental concept in computer science and programming. The `recursion` directory explores the concept of recursion in JavaScript, providing examples and exercises to help you grasp technique for solving problems.
+Recursion is a fundamental concept in computer science and programming. The `recursion` directory explores the concept of recursion in JavaScript, providing explanation, examples and exercises to help you grasp technique for solving problems.
+
+`Working on...`
 
 #### Future Updates ####
 
