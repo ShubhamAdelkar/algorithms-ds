@@ -17,4 +17,4 @@ Searching algorithms - `Linear Search` `Binary Search`
 
 This repository is a work in progress, and more content will be added regularly. Future updates may include additional algorithms, advanced data structures, optimization techniques.
 
-Thanks visiting this repository! Happy coding! 🚀
+Thanks for visiting this repository! Happy coding! 🚀
