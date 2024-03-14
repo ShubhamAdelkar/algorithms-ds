@@ -73,7 +73,7 @@ console.log(binarySearch(states, value));
 console.log(binarySearch(["Hello", "hii", "meaow", "median"], "hii"));
 console.log(binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 0], 9));
 
-// my solution, by my own
+// my solution, by my own.
 function binarySearch(array, value) {
   if (array.length === 0) return null;
   let left = 0;
@@ -94,7 +94,7 @@ function binarySearch(array, value) {
     }
   }
 
-  return -1;
+  return -1; // Return -1 if the value is not found
 }
 
 console.log("Me " + binarySearch(states, value));
