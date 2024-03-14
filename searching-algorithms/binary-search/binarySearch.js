@@ -52,7 +52,7 @@ const states = [
 ];
 const value = "California";
 
-// Standard Binary Search
+// Standard Binary Search (Optimized).
 function binarySearch(array, value) {
   let left = 0;
   let right = array.length - 1;
