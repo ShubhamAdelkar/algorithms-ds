@@ -1,12 +1,13 @@
+// bubble sort
 function bubblesort(array) {
   let swapped;
+  const swap = (array, idx1, idx2) =>
+    ([array[idx1], array[idx2]] = [array[idx2], array[idx1]]);
   do {
     swapped = false;
     for (let i = 0; i < array.length - 1; i++) {
       if (array[i] > array[i + 1]) {
-        let temp = array[i];
-        array[i] = array[i + 1];
-        array[i + 1] = temp;
+        swap(array, i, i + 1);
         swapped = true;
       }
     }
