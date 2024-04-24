@@ -17,7 +17,7 @@ Insertion sort is a sorting algorithm that works in a similar way to how you mig
 2. **Outer loop (for i):** Iterates through the array from index 1 to arr.length - 1. The first element is already considered sorted.
 3. **\*\*current = arr[i]:** Selects the current element being processed.
 4. **j = i - 1:** Initializes j to the index before the current element, marking the beginning of the sorted portion.
-5. **Inner loop (while j >= 0): **This loop iterates as long as j is within the bounds of the array and the element at arr[j] is greater than the current element.
+5. **Inner loop (while j >= 0):** This loop iterates as long as j is within the bounds of the array and the element at arr[j] is greater than the current element.
 6. **\*\*arr[j + 1] = arr[j]:** Shifts the larger element from the sorted portion one position to the right.
    j--: Decrements j to compare with the previous element in the sorted portion.
 7. **arr[j + 1] = current:** Once the loop exits, j points to the correct position for the current element. It's inserted there.
