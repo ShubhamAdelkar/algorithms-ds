@@ -10,11 +10,11 @@ function pivot(arr, start = 0, end = arr.length - 1) {
   for (let i = start + 1; i < arr.length; i++) {
     if (pivot > arr[i]) {
       swapIndex++;
-      console.log(swap(arr, swapIndex, i));
+      swap(arr, swapIndex, i);
+      //   console.log(arr);
     }
   }
-  console.log("index is " + swapIndex);
   return swapIndex;
 }
 
-pivot([10, 1, 3, 62, 2, 5, 3]);
+console.log("index is " + pivot([4, 8, 2, 1, 5, 7, 6, 3]));
