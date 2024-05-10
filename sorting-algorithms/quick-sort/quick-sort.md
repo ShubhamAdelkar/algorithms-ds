@@ -9,3 +9,4 @@ Quick Sort is a sorting algorithm that uses the "divide and conquer" approach. I
 3. store the current pivot index in a variable.
 4. loop through the array from the start until the end. if the pivot is greator than the current element, increament the pivot index variable and then swap the current element with the element at the pivot index.
 5. swap the starting element with pivot index.
+6. return the pivot index.
