@@ -51,13 +51,21 @@ class SinglyLinkedList {
     this.length--;
     return currentHead;
   }
+
+  printList() {
+    let current = this.head;
+    while (current) {
+      console.log(current.val);
+      current = current.next;
+    }
+  }
 }
 
 var list = new SinglyLinkedList();
 list.push("HELLO");
 list.push("GOODBYE");
-console.log(list);
+list.push("HI");
+list.printList();
 list.pop();
-console.log(list);
+list.printList();
 list.shift();
-console.log(list);
