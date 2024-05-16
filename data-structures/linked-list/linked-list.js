@@ -66,6 +66,7 @@ class SinglyLinkedList {
 
   printList() {
     let current = this.head;
+    console.log(this);
     while (current) {
       console.log(current.val);
       current = current.next;
@@ -77,8 +78,6 @@ var list = new SinglyLinkedList();
 list.push("HELLO");
 list.push("GOODBYE");
 list.push("HI");
-list.printList();
-list.unshift("ILOVEYOU");
-list.printList();
 list.shift();
+list.unshift("ILOVEYOU");
 list.printList();
