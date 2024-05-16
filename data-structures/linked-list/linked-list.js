@@ -52,6 +52,18 @@ class SinglyLinkedList {
     return currentHead;
   }
 
+  unshift(val) {
+    let newNode = new Node(val);
+    if (!this.head) {
+      this.head = newNode;
+      this.tail = this.head;
+    }
+    newNode.next = this.head;
+    this.head = newNode;
+    this.length++;
+    return this;
+  }
+
   printList() {
     let current = this.head;
     while (current) {
@@ -66,6 +78,7 @@ list.push("HELLO");
 list.push("GOODBYE");
 list.push("HI");
 list.printList();
-list.pop();
+list.unshift("ILOVEYOU");
 list.printList();
 list.shift();
+list.printList();
