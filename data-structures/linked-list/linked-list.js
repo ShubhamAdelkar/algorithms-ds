@@ -93,6 +93,19 @@ class SinglyLinkedList {
     }
     return false;
   }
+
+  insert(index, val) {
+    if (index < 0 || index > this.length) return false;
+    if (index === this.length) return this.push(val);
+    if (index === 0) return this.unshift(val);
+    let newNode = new Node(val);
+    let prev = this.get(index - 1);
+    let temp = prev.next;
+    prev.next = newNode;
+    newNode.next = temp;
+    this.length++;
+    return true;
+  }
 }
 
 var list = new SinglyLinkedList();
@@ -104,4 +117,5 @@ list.unshift("ILOVEYOU");
 list.get(2);
 list.printList();
 list.set(1, "IHATEYOU");
+list.insert(2, "IHATEYOUTOO");
 list.printList();
