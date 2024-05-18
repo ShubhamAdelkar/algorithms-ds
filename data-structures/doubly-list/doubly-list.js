@@ -93,6 +93,15 @@ class DoublyLinkedList {
       return current;
     }
   }
+
+  set(index, val) {
+    let validNode = this.get(index);
+    if (validNode != null) {
+      validNode.val = val;
+      return true;
+    }
+    return false;
+  }
 }
 
 let list = new DoublyLinkedList();
@@ -103,5 +112,8 @@ list.push("LAST ITEM");
 list.pop();
 list.shift();
 list.unshift("HELLO");
+list.push("LAST ITEM");
+console.log(list);
 list.get(1);
+list.set(0, "HII");
 console.log(list);
