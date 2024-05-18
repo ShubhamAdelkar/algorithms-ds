@@ -76,10 +76,11 @@ class DoublyLinkedList {
     if (index <= this.length / 2) {
       let count = 0;
       let current = this.head;
-      while (count != index) {
+      while (count !== index) {
         current = current.next;
         count++;
       }
+      console.log(current);
       return current;
     } else {
       let count = this.length - 1;
@@ -88,6 +89,7 @@ class DoublyLinkedList {
         current = current.prev;
         count--;
       }
+      console.log(current);
       return current;
     }
   }
@@ -98,9 +100,8 @@ let list = new DoublyLinkedList();
 list.push(99);
 list.push(100);
 list.push("LAST ITEM");
-console.log(list);
 list.pop();
-console.log(list);
 list.shift();
 list.unshift("HELLO");
+list.get(1);
 console.log(list);
