@@ -25,8 +25,25 @@ class Stack {
     this.size++;
     return this;
   }
+
+  pop() {
+    if (!this.first) return undefined;
+    let temp = this.first;
+    if (this.first === this.last) {
+      this.last = null;
+    }
+    this.first = this.first.next;
+    this.size--;
+    return temp.value;
+  }
 }
 
 let stack = new Stack();
 stack.push(99);
+stack.push(98);
+stack.push(100);
+console.log(stack);
+stack.pop();
+console.log(stack);
+stack.pop();
 console.log(stack);
