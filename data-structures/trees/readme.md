@@ -18,3 +18,15 @@ trees are non-linear unlike lists - linear.
 2. `Network Routing`
 3. `Abstract syntax trees`
 4. `Artificial intelligence`
+5. `Folders in operating system`
+6. `Computer files system`
+
+### Kinds of Trees
+
+1. `Trees`
+2. `Binary Trees`
+3. `Binary Search Trees`
+
+## Binary Trees
+
+Binary trees have most two childrens. they are kept in an order. every node to the left of a parent node is always less than the parent. every node to the right of the parent node id always greater than the parent.
