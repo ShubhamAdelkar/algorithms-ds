@@ -78,6 +78,6 @@ tree.insert(2);
 tree.insert(3);
 tree.insert(20);
 tree.insert(44);
-console.log(tree.DFSPostOrder());
+console.log(tree.DFSInOrder());
 console.log(tree.find(44));
 console.log(tree);
