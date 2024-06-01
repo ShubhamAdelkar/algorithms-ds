@@ -62,18 +62,17 @@ class PriorityQueue {
   }
 }
 
-class Node {}
+class Node {
+  constructor(val, priority) {
+    this.val = val;
+    this.priority = priority;
+  }
+}
 
-let heap = new MaxBinaryHeap();
-heap.insert(41);
-heap.insert(39);
-heap.insert(33);
-heap.insert(18);
-heap.insert(27);
-heap.insert(12);
-heap.insert(55);
-console.log(heap);
-heap.extractMax();
-console.log(heap);
-heap.extractMax();
-console.log(heap);
+let queue = new PriorityQueue();
+queue.enqueue("common cold", 1);
+queue.enqueue("gunshot wound", 0);
+queue.enqueue("fever", 2);
+console.log(queue);
+queue.dequeue();
+console.log(queue.values);
