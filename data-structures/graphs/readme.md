@@ -4,6 +4,15 @@ Graphs are a fundamental data structure used to represent relationships between 
 
 it consist of a finite set of vertices or nodes or points, together with a set of unordered pairs if these vertices for an undirected graph or a set of ordered pairs for a directed graphs.
 
+## Uses
+
+`Social Network`
+`Locstion/Mapping`
+`Routing Algorithms`
+`Visual Hierachy`
+`File System Optimizations`
+`EveryWhere`
+
 ## Terminology
 
 1. **Nodes (Vertices)**: These represent the individual entities in the graph. They can be labeled with data (e.g., strings, numbers, objects) to hold relevant information.
