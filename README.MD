@@ -17,10 +17,12 @@ Sorting algorithms are efficiently arranging elements in a list or array accordi
 **Searching efficiently:** Once data is sorted, you can leverage more efficient search algorithms like binary search to quickly find specific elements.
 Sorting algorithms - `Bubble Sort` `Selection Sort` `Insertion` `Merge` `Quick` & `Radix Sort`
 
-`Working on...`
+### 4. Data Structures
 
-#### Future Updates
+A data structure is a specialized format for organizing, processing, retrieving, and storing data in a computer's memory. It defines how data is arranged and how different operations (adding, removing, searching) can be performed efficiently.
+There are two main categories of data structures:
+`Linear Data Structures` `Non-Linear Data Structures`
 
-This repository is a work in progress, and more content will be added regularly. Future updates may include additional algorithms, advanced data structures, optimization techniques.
+`Working On...`
 
-Thanks for visiting this repository! Happy coding! 🚀
+Thanks for visiting this repository!🚀
