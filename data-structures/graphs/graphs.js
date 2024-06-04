@@ -20,6 +20,14 @@ class Graph {
     this.adjencyList[v1] = this.adjencyList[v1].filter((v) => v !== v2);
     this.adjencyList[v2] = this.adjencyList[v2].filter((v) => v !== v1);
   }
+
+  removeVertex(vertex) {
+    while (this.adjencyList[vertex].length) {
+      const adjencyVertex = this.adjencyList[vertex].pop();
+      this.removeEdge(vertex, adjencyVertex);
+    }
+    delete this.adjencyList[vertex];
+  }
 }
 
 let graph = new Graph();
@@ -27,4 +35,5 @@ graph.addEdge("Dallas", "Tokyo");
 graph.addEdge("New York", "London");
 console.log(graph);
 graph.removeEdge("New York", "London");
+graph.removeVertex("Tokyo");
 console.log(graph);
