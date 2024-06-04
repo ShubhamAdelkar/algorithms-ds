@@ -34,6 +34,5 @@ let graph = new Graph();
 graph.addEdge("Dallas", "Tokyo");
 graph.addEdge("New York", "London");
 console.log(graph);
-graph.removeEdge("New York", "London");
 graph.removeVertex("Tokyo");
 console.log(graph);
