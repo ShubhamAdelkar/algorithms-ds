@@ -46,13 +46,30 @@ class Graph {
     })(start);
     return result;
   }
+
+  DFSIterative(start) {
+    const stack = [start];
+    const result = [];
+    const visited = {};
+
+    while (stack.length) {
+      const current = stack.pop();
+      if (!visited[current]) {
+        visited[current] = true;
+        result.push(current);
+        stack.push(...this.adjencyList[current]); // Efficiently add neighbors
+      }
+    }
+    return result;
+  }
 }
 
 let graph = new Graph();
 graph.addEdge("Dallas", "Tokyo");
-graph.addEdge("New York", "London");
 graph.addEdge("A", "B");
-graph.addEdge("C", "D");
+graph.addEdge("A", "C");
+graph.addEdge("B", "D");
+graph.addEdge("C", "E");
 console.log(graph);
 graph.removeVertex("Tokyo");
 console.log(graph);
