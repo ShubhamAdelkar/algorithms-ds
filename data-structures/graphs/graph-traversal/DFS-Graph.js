@@ -74,3 +74,4 @@ console.log(graph);
 graph.removeVertex("Tokyo");
 console.log(graph);
 console.log(graph.DFSRecursive("A"));
+console.log(graph.DFSIterative("A"));
