@@ -14,6 +14,8 @@ DFS is a graph traversal algorithm that explores as far as possible along each b
 
 ### Code Analysis
 
+A. **DFS**
+
 1. `DFSRecursive(start):` This is the core DFS function.
 2. `result:` An array to store the visited vertices in the traversal order.
 3. `visited:` A hash table to keep track of visited nodes.
@@ -25,3 +27,5 @@ DFS is a graph traversal algorithm that explores as far as possible along each b
    - For each neighbor (n) of vertex:
    - If n is not visited, recursively call dfs(n) to explore that branch.
 6. Returns the `result` array containing the visited vertices.
+
+B. **BFS**
