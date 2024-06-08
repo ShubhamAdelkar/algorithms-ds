@@ -26,10 +26,11 @@ There are two main categories of data structures:
 ### 5. Dijkstra Algorithm
 
 Dijkstra's algorithm is a powerful tool for finding the shortest path between two points in a graph. Dijkstra's algorithm has numerous applications in various fields, including:
-`Routing algorithms:` Finding the shortest route for navigation apps or delivery services.
-`Network routing:` Optimizing data flow in communication networks.
-`Computer graphics:` Determining the shortest path for light rays in ray tracing algorithms.
-`Artificial intelligence:` Planning optimal paths for search algorithms in game development or robotics.
+
+- `Routing algorithms:` Finding the shortest route for navigation apps or delivery services.
+- `Network routing:` Optimizing data flow in communication networks.
+- `Computer graphics:` Determining the shortest path for light rays in ray tracing algorithms.
+- `Artificial intelligence:` Planning optimal paths for search algorithms in game development or robotics.
 
 `Working On...`
 
